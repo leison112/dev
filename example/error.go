@@ -1,7 +1,7 @@
 package main
 
 import (
-	"errors"
+	"github.com/cockroachdb/errors"
 	"fmt"
 )
 
@@ -21,7 +21,7 @@ func (myError MyError) Error() string {
 func main() {
 	fmt.Println("Hello World!")
 	i, err := errorFunc(1)
-	fmt.Printf("%d,%s\n", i, err)
+	fmt.Printf("%d,%+v\n", i, err)
 	myError := MyError{code: 500, msg: "异常"}
 	var myErr error
 	myErr = myError

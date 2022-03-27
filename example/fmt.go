@@ -23,11 +23,11 @@ func main() {
 		age  int
 	)
 	//中间用空格分隔
-	// fmt.Scan(&name, &age)
-	// fmt.Fprintln(f, name, age)
+	fmt.Scan(&name, &age)
+	fmt.Fprintln(f, name, age)
 	//为什么不能多次Scan
-	// fmt.Scanf("name=%s age=%d", &name, &age)
-	// fmt.Fprintln(f, name, age)
+	fmt.Scanf("name=%s age=%d", &name, &age)
+	fmt.Fprintln(f, name, age)
 
 	b := strings.NewReader("Leison 30")
 	fmt.Fscan(b, &name, &age)
