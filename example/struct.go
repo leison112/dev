@@ -16,5 +16,5 @@ func main() {
 	fmt.Printf("指针:%p\n", people)
 	fmt.Printf("函数:%s\n", people.getName())
 	var man = new(Human)
-	fmt.Printf("%T-%s", man, man)
+	fmt.Printf("%T-%s\n", man, man)
 }
